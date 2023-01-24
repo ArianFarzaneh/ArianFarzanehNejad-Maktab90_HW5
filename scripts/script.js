@@ -7,7 +7,7 @@ let sortInfo=(info)=>
     let database=[]
     ages.forEach((element) => {
         let info2=info.filter((item)=>item.age===element)    
-        database.push(info2)
+        database.push(info2[0])
     });
     console.log(database);
 }

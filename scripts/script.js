@@ -1,18 +1,24 @@
-//q4
+//5
 'use strict'
-function showNotification()
+
+    let ask=(question,yes,no)=>
+    {
+        if(confirm(question))yes()
+        else no()    
+    }
+    ask('do you agree?',
+    ()=>{alert("you agreed.")},
+    ()=>{alert("you canceled the execution");}
+)
+/*
+question:
+function ask(question,yes,no)
 {
-    let payam = prompt("payam khod ra vared konid: ");
-    let topp=+prompt('enter top:');
-    let leftt=+prompt('enter left:');
-    let cname=prompt('name class ra vared konid: ');
-    let div =document.createElement('div');
-    document.body.append(div);
-    div.style.position="absolute";
-    div.style.top=`${topp}px`;
-    div.style.left=`${leftt}px`;
-    div.className=`${cname}`;
-    div.innerHTML=payam;
-    alert(`your class name set to: ${div.className}`);
+    if(confirm(question))yes()
+    else no()
 }
-showNotification();
+ask('do you agree?',
+function(){alert("you agreed.")},
+function(){alert("you canceled the execution");}
+);
+*/

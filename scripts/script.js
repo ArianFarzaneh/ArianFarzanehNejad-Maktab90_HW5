@@ -1,8 +1,29 @@
-//q1
+//q2
 'use strict'
-let user={
-    name:'john',
-    age:30,
-    sayHello:function() {console.log(`hello ${this.name}!`)}
+let stepCounter={
+    step:0,
+    increase:function(){
+        this.step++;  
+    },
+    decrease:function()
+    {
+        this.step--;
+    },
+    reset:function()
+    {
+        this.step=0;
+    },
+    read:function()
+    {
+        console.log(this.step);
+    },
 };
-user.sayHello();
+stepCounter.increase();
+stepCounter.increase();
+stepCounter.increase();
+stepCounter.increase();
+stepCounter.decrease();
+stepCounter.decrease();
+stepCounter.read()
+stepCounter.reset();
+stepCounter.read()

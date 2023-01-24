@@ -1,32 +1,18 @@
-//q3
+//q4
 'use strict'
-let sortInfo=(info)=>
+function showNotification()
 {
-    let ages=info.map(item=>item.age)
-    ages=ages.sort()
-    let database=[]
-    ages.forEach((element) => {
-        let info2=info.filter((item)=>item.age===element)    
-        database.push(info2[0])
-    });
-    console.log(database);
+    let payam = prompt("payam khod ra vared konid: ");
+    let topp=+prompt('enter top:');
+    let leftt=+prompt('enter left:');
+    let cname=prompt('name class ra vared konid: ');
+    let div =document.createElement('div');
+    document.body.append(div);
+    div.style.position="absolute";
+    div.style.top=`${topp}%`;
+    div.style.left=`${leftt}%`;
+    div.className=`${cname}`;
+    div.innerHTML=payam;
+    alert(`your class name set to: ${div.className}`);
 }
-let info=[
-    {
-        name:'ali' ,
-        age:30 
-    },
-    {
-        name:'mohsen' ,
-        age:24 
-    },
-    {
-        name:"mohammad" ,
-        age:37 
-    },
-    {
-        name:"arian" ,
-        age:20
-    }
-];
-sortInfo(info);
+showNotification();

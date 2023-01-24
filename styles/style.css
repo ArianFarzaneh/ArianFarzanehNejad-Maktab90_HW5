@@ -3,3 +3,87 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    font-size: 62.5%;
+  }
+  
+  body{
+    font-size: 1.6rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: #ebeff2;
+  }    
+.login-bar{
+    width: 400px;
+    height: 450px;
+    background-image: linear-gradient(#787af0, #a439e6);
+    border-radius: 3%;
+    padding: 5%;
+}
+.logo{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+}
+img{
+
+    width:25%;
+    border-radius: 50%;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 120%;
+    color: white;
+}
+.input-form{
+    margin-top: 10%;   
+    color: white;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    margin-bottom: 10%;
+}
+::placeholder {
+    color: white;
+  }
+  .remember-me{
+    display: flex;
+  }
+  .checkbox{
+    width: 8%;
+    margin-top: 1%;
+  }
+  .checkbox-text{
+    width: 82%;
+    color: white;
+  }
+  .login-btn{
+    text-align: center;
+    height: 10%;
+  }
+  button{
+    width: 25%;
+    height: 80%;
+    border-radius: 100px 100px 100px 100px;
+    background-color: white;
+    border-color: transparent;
+  }
+  .forgot-pass{
+    text-align: center;
+    font-size: 80%;
+    margin-top: 10%;
+    color: white;
+  }

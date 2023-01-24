@@ -13,77 +13,55 @@ html{
     top:50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    background-color: #ebeff2;
-  }    
-.login-bar{
+    background-color: #f07dfc;
+  }  
+  .info-box{
+    height: 400px;
     width: 400px;
-    height: 450px;
-    background-image: linear-gradient(#787af0, #a439e6);
-    border-radius: 3%;
-    padding: 5%;
-}
-.logo{
-    text-align: center;
-    width: 100%;
-    height: 20%;
-}
-img{
-
-    width:25%;
+    background-color: #ab58ce;
+    border-radius: 50px;
+    padding: 10%;
+  }
+  img{
+    border: 4px solid white;
+    width:30%;
     border-radius: 50%;
 }
-.title{
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 2%;
-    text-align: center;
+.image{
+    margin-bottom: 5%;
+}
+.job{
     font-size: 120%;
+    font-weight:lighter;
+    color: white;
+    margin-bottom: 3%;
+}
+.name{
+    font-weight: bold;
+    color: white;
+    font-size: 150%;
+    margin-bottom: 3%;
+}
+.details{
+    margin-bottom: 7%;
     color: white;
 }
-.input-form{
-    margin-top: 10%;   
+.social-media{
     color: white;
-    
-}
-form{
+    font-size: 180%;
+    width: 40%;
     display: flex;
-    flex-direction: column;
-    
+    justify-content: space-between;
 }
-input{
-    width: 90%;
-    border: none;
-    border-bottom: 1px solid white;
-    background: transparent;
-    margin-bottom: 10%;
+.instagram:hover{
+    color:#f60c52;
+    transition: .3s ease-in-out;
 }
-::placeholder {
-    color: white;
-  }
-  .remember-me{
-    display: flex;
-  }
-  .checkbox{
-    width: 8%;
-    margin-top: 1%;
-  }
-  .checkbox-text{
-    width: 82%;
-    color: white;
-  }
-  .login-btn{
-    text-align: center;
-    height: 10%;
-  }
-  button{
-    width: 25%;
-    height: 80%;
-    border-radius: 100px 100px 100px 100px;
-    background-color: white;
-    border-color: transparent;
-  }
-  .forgot-pass{
-    text-align: center;
-    font-size: 80%;
-    margin-top: 10%;
-    color: white;
-  }
+.facebook:hover{
+    color:#4867aa;
+    transition: .3s ease-in-out;
+}
+.linkedin:hover{
+    color: #0077b5;
+    transition: .3s ease-in-out;
+}

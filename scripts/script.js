@@ -9,8 +9,8 @@ function showNotification()
     let div =document.createElement('div');
     document.body.append(div);
     div.style.position="absolute";
-    div.style.top=`${topp}%`;
-    div.style.left=`${leftt}%`;
+    div.style.top=`${topp}px`;
+    div.style.left=`${leftt}px`;
     div.className=`${cname}`;
     div.innerHTML=payam;
     alert(`your class name set to: ${div.className}`);
